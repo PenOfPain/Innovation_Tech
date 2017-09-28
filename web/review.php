@@ -4,23 +4,23 @@
 classe review
 {
 
-  private $comment, $nota;
+  private $id, $comment, $nota;
   //$user = new user();
   $date = new \DateTime();
 
-  public function review(string $comment, float $nota, $date) //rajouter user $usr//
+  public function review(string comment, float $nota) //rajouter user $usr//
   {
     $this->comment = $comment;
     $this->nota = $nota;
-    $this->date = $date;
-  }
 
-  public function getComment(): string : float : date
+  }
+  public function getInfo(): string : float
   {
       return $this->comment;
-      return $this->nota;
-      return $this->date;
+      return $this->nota
+
   }
 }
 
- ?>
+$rev = new review("super review!", 2); //création d'une review
+print $rev->getInfo();
