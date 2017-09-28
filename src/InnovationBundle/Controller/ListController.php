@@ -11,7 +11,7 @@ use InnovationBundle\Repository\PhoneRepository;
 class ListController extends Controller
 {
       /**
-      * @Route("/phone/{phoneId}", name="detail")
+      * @Route("/phonex/{phoneId}", name="detail")
       */
     public function acceuilAction(int $phoneId)
     {

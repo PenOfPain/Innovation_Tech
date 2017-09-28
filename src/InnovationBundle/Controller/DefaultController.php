@@ -11,7 +11,7 @@ use InnovationBundle\Repository\PhoneRepository;
 class DefaultController extends Controller
 {
       /**
-      * @Route("/phoness/{phoneId}", name="default")
+      * @Route("/phonexs/{phoneId}", name="default")
       */
     public function detailAction(int $phoneId)
     {
