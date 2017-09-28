@@ -1,17 +1,15 @@
 <?php
 
-namespace InnovationBundle\Main;
+namespace InnovationBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use InnovationBundle\Repository\CategoryRepository;
 
-class DefaultController extends Controller
+class AcceuilController extends Controller
 {
       /**
-      * @Route("/acceuil/{categoryId}", name="acceuil")
+      * @Route("/acceuil/{categoryId}", name="home")
       */
     public function accueilAction(int $categoryId)
     {

@@ -13,7 +13,7 @@ class ListController extends Controller
       /**
       * @Route("/phonex/{phoneId}", name="detail")
       */
-    public function acceuilAction(int $phoneId)
+    public function listAction(int $phoneId)
     {
       $phoneRepository = new PhoneRepository();
 
