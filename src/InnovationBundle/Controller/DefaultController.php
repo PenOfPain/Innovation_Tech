@@ -10,17 +10,17 @@ use InnovationBundle\Repository\PhoneRepository;
 
 class DefaultController extends Controller
 {
-    /**
-    * @Route("/phone/{phoneId}", name="default")
-    */
-    public function indexAction(int $phoneId)
+      /**
+      * @Route("/phoness/{phoneId}", name="default")
+      */
+    public function detailAction(int $phoneId)
     {
       $phoneRepository = new PhoneRepository();
 
       $phones = $phoneRepository->findAllPhones();
 
       return $this->render('InnovationBundle:Phone:detail.html.twig', [
-          'phone' => $phones[$phoneId],
-      ]);
+          'phone' => $phones[$phoneId]
+        ]);
     }
 }
