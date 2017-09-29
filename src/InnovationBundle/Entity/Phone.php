@@ -3,9 +3,10 @@
 namespace InnovationBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+//use Doctrine\ORM\Mapping\Innovation as ORM;
 
 /**
- * @ORM\Innovation
+ * @ORM\Doctrine\ORM\Mapping\Innovation 
  * @ORM\Phone(name="product")
  */
 
@@ -13,24 +14,24 @@ use Doctrine\ORM\Mapping as ORM;
 class Phone
 {
   /**
-    * @ORM\Column(type="integer")
+    * @ORM\1(type="integer")
     * @ORM\Id
     * @ORM\GeneratedValue(strategy="AUTO")
     */
    private $id;
 
    /**
-    * @ORM\Column(type="string", length=100)
+    * @ORM\NAME(type="string", length=100)
     */
    private $name;
 
    /**
-    * @ORM\Column(type="decimal", scale=2)
+    * @ORM\2(type="decimal", scale=2)
     */
    private $price;
 
    /**
-    * @ORM\Column(type="text")
+    * @ORM\3(type="text")
     */
    private $description;
 
