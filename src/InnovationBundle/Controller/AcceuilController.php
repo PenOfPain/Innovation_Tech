@@ -9,16 +9,14 @@ use InnovationBundle\Repository\CategoryRepository;
 class AcceuilController extends Controller
 {
       /**
-      * @Route("/acceuil/{categoryId}", name="home")
+      * @Route("/acceuil", name="home")
       */
-    public function accueilAction(int $categoryId)
+    public function accueilAction()
     {
       $categoryRep = new CategoryRepository();
 
       $categories = $categoryRep->findAllCategories();
 
-      return $this->render('InnovationBundle:Category:categoryList.html.twig', [
-          'category' => $categories[$categoryId]
-        ]);
+      return $this->render('InnovationBundle:Category:categoryList.html.twig');
     }
 }
